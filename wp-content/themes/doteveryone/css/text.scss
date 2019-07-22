@@ -1,0 +1,151 @@
+h1 {
+    font-family: $font_serif;
+    color: $black;
+    font-size: $base *2;
+    font-weight: normal;
+    a {
+        font-family: $font_serif;
+    }
+}
+
+h1.page-title {
+    font-family: $font-sans;
+}
+
+h2, h2 a {
+    color: $blue;
+    font-family: $font_sans;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2*$base;
+}
+
+a:visited {
+    color: $blue;
+}
+
+h3 {
+    font-family: $font_sans;
+    color: $black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h3 span {
+    color: $charcoal;
+    display: block;
+}
+
+h4 {
+    font-family: $font_sans;
+    color: $black;
+    margin: 2 * $base 0 $base 0;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+
+h1, h2, h3, h4 {
+    margin: $base 0;
+}
+
+blockquote {
+  border-left: 5px solid $grey;
+  margin: 0;
+  padding-left: $base;
+}
+
+.wp-caption-text {
+  font-family: $font-sans;
+}
+
+th {
+    font-family: $font_sans;
+    font-weight: bold;
+    color: $black;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+table {
+    font-family: $font_sans;
+    color: $charcoal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+tr td:last-child {
+    width: 50%;
+}
+
+tr td {
+    text-align: right;
+}
+
+tr td:first-child {
+    text-align: left;
+}
+
+a {
+    @include link-text;
+}
+
+a.project_link {
+    color: $black;
+    font-size: 1.5 * $base;
+    margin: $base 0;
+    display: block;
+    text-decoration: underline;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.content {
+  ul li::before {
+      content: "\2022";
+      font-weight: bold;
+      color: $orange;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+  }
+
+  ol {
+      list-style: none;
+      counter-reset: li;
+  }
+
+  ol li::before {
+      content: counter(li);
+      color: $orange;
+      display: inline-block;
+      font-size: 1.5 * $base;
+      width: 1em;
+      margin-left: -1.5em;
+      margin-right: 0.5em;
+      margin-top: 0.5em;
+      text-align: right;
+      direction: rtl;
+  }
+
+  ol li {
+      counter-increment: li;
+      list-style: none;
+  }
+}
+li {
+    font-family: $font-sans;
+    font-size: 18px;
+}
+
+p {
+    font-family: $font-sans;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    a {
+        font-size: 18px;
+        font-family: $font-sans;
+    }
+}

@@ -1,0 +1,78 @@
+$orange: rgb(255,156,10);
+$black: rgb(14,50,73);
+$charcoal: #777;
+$grey: rgb(178,178,178);
+$white: #FFF;
+
+$blue: #023149;
+$lightblue: lighten($blue, 25%);
+$teal: rgb(225,235,232);
+$lilac: rgb(205,205,250);
+
+$base: 18px;
+
+$body-top: 90px;
+$body-top-med: 90px;
+$body-top-mobile: 80px;
+
+
+$font-serif: 'Chiswick Deck Web', serif;
+$font-sans: 'Work Sans', sans-serif;
+
+
+@mixin link-text {
+	color: $blue;
+	font-size: $base;
+	font-family: $font_sans;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-decoration: underline;
+}
+
+@mixin lede-text {
+	font-family: $font_serif;
+	font-size: 27px;
+	line-height: 32px;
+}
+
+@mixin lede-text-mobile {
+		font-size: 20px;
+		line-height: 25px;
+}
+
+@mixin lede-text-phablet {
+		font-size: 25px;
+		line-height: 29px;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin action_button {
+	display: block;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $black;
+  color: $black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5*$base;
+  // box-shadow: 1px 1px 0px $black;
+  transition: all ease 0.1s;
+  background: transparent;
+  font-family: $font-sans;
+  text-decoration: none;
+  &:hover, &:active {
+    text-decoration: none;
+    color: $white;
+    // box-shadow: 1px 1px -1px $white;
+    border-color: $black;
+    background: $black;
+  }
+}

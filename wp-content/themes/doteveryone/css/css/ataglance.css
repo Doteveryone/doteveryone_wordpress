@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Sansa Lloyds';
+  src: url("/fonts/SansaLloyds-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/SansaLloyds-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/SansaLloyds-SemiBold.woff") format("woff"), url("/fonts/SansaLloyds-SemiBold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700; }
+dd, dt {
+  font-family: "Sansa Lloyds"; }
+
+dl {
+  min-height: 90px; }
+
+dd.stat {
+  font-size: 40px;
+  margin: 0; }
+
+dd.stat_large {
+  font-size: 60px;
+  margin: 0;
+  line-height: 1.1em; }
+
+dd.stat_xlarge {
+  font-size: 80px;
+  margin: 0;
+  line-height: 0.9em; }
+
+dd span {
+  font-size: 80%; }
+
+.ratings dd {
+  font-family: "font_sans LT Std Roman", "Helvetica", sans-serif;
+  font-weight: bold; }
+
+dt {
+  font-size: 12px;
+  color: #c3c3c3;
+  font-family: "font_sans LT Std Roman", "Helvetica", sans-serif;
+  margin-top: 6px; }
+
+a.swap {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  text-decoration: none; }
+
+.glance {
+  position: relative; }
+
+.back {
+  display: none; }
+  .back table {
+    width: 80%; }
+    .back table h4 {
+      font-family: "font_sans LT Std Roman", "Helvetica", sans-serif;
+      color: black;
+      font-weight: bold; }
+    .back table tr {
+      border-top: 1px solid #777;
+      line-height: 22px; }
+    .back table th {
+      border-top: 0px; }
+    .back table tr.current {
+      font-weight: bold;
+      margin-top: 6px;
+      border-top: 1px solid #000; }

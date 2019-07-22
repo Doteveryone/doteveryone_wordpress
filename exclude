@@ -1,0 +1,11 @@
+wp-config.php
+.htaccess
+exclude
+deploy.sh
+dry_deploy.sh
+deploy_down.sh
+wp-content/uploads
+wp-content/plugins
+wp-admin
+wp-includes
+node_modules

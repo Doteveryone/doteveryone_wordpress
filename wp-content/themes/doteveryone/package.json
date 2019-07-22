@@ -1,0 +1,22 @@
+{
+  "name": "doteveryone",
+  "version": "1.0.0",
+  "description": "grunt for doteveryone",
+  "main": "grunt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
+  }
+}
