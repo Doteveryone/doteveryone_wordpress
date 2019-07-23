@@ -42,6 +42,13 @@ the_post();
             <?php the_content(); ?>
           </div>
           <div class="col-sm-3">
+            <?php 
+            if (get_field('author')) { 
+             echo 'By: <a href="/about/">';
+             the_field('author');
+             echo '</a>';
+            }
+            ?>
             <?php get_sidebar(); ?>
           </div>
         </div>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <!-- Place favicon.ico in the root directory -->
+        <style type="text/css">
+            body { display: flex; align-content: center; justify-content: center; flex-direction: column; }
+            h1 { text-align: center; }
+
+        </style>
+    </head>
+    <body>
+        <img src="doteveryone_wordmark.svg">
+        <h1>The Doteveryone site is currently down for maintenance. We'll be back soon</h1>
+    </body>
+</html>

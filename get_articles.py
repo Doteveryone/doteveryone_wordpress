@@ -21,13 +21,15 @@ mycursor.execute('select post_ID,meta_value from de_postmeta where meta_key = "c
 myresult = mycursor.fetchall()
 
 for x in myresult:
-  print("http://dev.doteveryone.org.uk/index.php?p="+str(x[0]))
+  print("https://www.doteveryone.org.uk/index.php?p="+str(x[0]))
   url = x[1]
   r = requests.get(url)           # Sends HTTP GET Request
   soup = BeautifulSoup(r.text, "html.parser") # Parses HTTP Response
   # print(soup.prettify())          # Prints user-friendly results
   article = ""
   sections = soup.select("div.af.ac.dj.w.x")
+  author = sections[0].select_one('div.ag span a').text
+  # print(author)
   sections[0].select_one('div').decompose()
   for section in sections:
     # article.select_one(".hr.hs.dx.aq.ht.b.hu.hv.hw.hx.hy.hz.ia").decompose()
@@ -37,5 +39,8 @@ for x in myresult:
     article += str(section)
   sql = "UPDATE de_posts set post_content = %s where ID = %s"
   val = (article.replace('max/60', 'max/700').strip('\n'),str(x[0]))
+  postcursor.execute(sql,val)
+  sql = "INSERT INTO de_postmeta (post_id,meta_value,meta_key) VALUES (%s,%s,'author')"
+  val = (str(x[0]),author)
   postcursor.execute(sql,val)
   db.commit()
